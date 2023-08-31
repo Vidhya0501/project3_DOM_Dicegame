@@ -1,14 +1,11 @@
 
-const dice=document.getElementsByTagName("img");
+var h1_text=["Player-1 To Play","Player-2 To Play"];
 
-// window.addEventListener("load", function() {
-//     document.getElementsByClassName("btn").disabled=true; // or removeAttribute("disabled")
-//   })
-
-var h1_text=["Player-1 To Play","Player-2 To Play"]
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
   }
+
+//   reset
 
 function  reset_func(){
     document.getElementById("score-player1").innerHTML=0;
@@ -32,6 +29,8 @@ function  reset_func(){
     document.getElementById("result").innerText="";
 }
 
+// dice-images
+
 let images=["./Dice_images/dice_1.png","./Dice_images/dice_2.png","./Dice_images/dice_3.png",
 "./Dice_images/dice_4.png","./Dice_images/dice_5.png","./Dice_images/dice_6.png"];
 
@@ -41,6 +40,7 @@ let result2=0;
 let rtext1="Congratulations!👏👍 Player 1 win ✨🎉";
 let rtext2="Congratulations!👏👍 Player 2 win ✨🎉";
 
+// player1
 
 function roll_1(){
             
@@ -61,6 +61,8 @@ function roll_1(){
             }
             
 }
+
+// player2
 
 function roll_2(){
      
