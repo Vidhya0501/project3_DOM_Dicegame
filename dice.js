@@ -20,10 +20,12 @@ let reset_func=(()=>{
     if(text1===h1_text[0]){
         document.getElementById("player1-btn").disabled = false;
         document.getElementById("player2-btn").disabled = true;
+        document.getElementById("reset-btn").disabled = true;
     }
     else{
         document.getElementById("player1-btn").disabled = true;
         document.getElementById("player2-btn").disabled = false;
+        document.getElementById("reset-btn").disabled = true;
     }
 
     document.getElementById("result").innerText="";
@@ -58,6 +60,7 @@ let roll_1=(()=>{
                 document.getElementById("player2-btn").disabled = true;
                 result1=0;
                 result2=0;
+                document.getElementById("reset-btn").disabled = false;
             }
             
 });
@@ -80,6 +83,7 @@ let roll_2=(()=>{
                 document.getElementById("player2-btn").disabled = true;
                 result1=0;
                 result2=0;
+                document.getElementById("reset-btn").disabled = false;
             }
             
 });
