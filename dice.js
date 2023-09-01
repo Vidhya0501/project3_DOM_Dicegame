@@ -1,13 +1,13 @@
 
 var h1_text=["Player-1 To Play","Player-2 To Play"];
 
-function getRandomInt(max) {
+let getRandomInt=((max) =>{
     return Math.floor(Math.random() * Math.floor(max));
-  }
+  });
 
 //   reset
 
-function  reset_func(){
+let reset_func=(()=>{
     document.getElementById("score-player1").innerHTML=0;
     document.getElementById("score-player2").innerHTML=0;
 
@@ -27,7 +27,7 @@ function  reset_func(){
     }
 
     document.getElementById("result").innerText="";
-}
+});
 
 // dice-images
 
@@ -42,7 +42,7 @@ let rtext2="Congratulations!👏👍 Player 2 win ✨🎉";
 
 // player1
 
-function roll_1(){
+let roll_1=(()=>{
             
             let dice_value=Math.floor(Math.random()*6);
             document.querySelector("#dice_image").setAttribute("src",images[dice_value]);
@@ -60,11 +60,11 @@ function roll_1(){
                 result2=0;
             }
             
-}
+});
 
 // player2
 
-function roll_2(){
+let roll_2=(()=>{
      
             let dice_value=Math.floor(Math.random()*6);
             document.querySelector("#dice_image").setAttribute("src",images[dice_value]);
@@ -82,7 +82,7 @@ function roll_2(){
                 result2=0;
             }
             
-}
+});
 
 
 
