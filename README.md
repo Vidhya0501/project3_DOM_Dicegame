@@ -1,4 +1,5 @@
 Dice game using JS DOM.
+![image](https://github.com/user-attachments/assets/e90c5014-a6b8-4995-b140-7b6cf97f8b36)
 
 It is designed as a two player game.
 Randomly any one player wil start the game.
